@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Streamora: Stream Movies and TV Shows</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+    <!--Loading Screen Start-->
+    <div id="loading-screen">
+        <div class="loader"></div>
+    </div>
+    <!--Loading Screen End-->
+    <!-- Navigation Bar Start-->
+    <header>
+        <a href="index.html#" class="logo"><i class="fa-solid fa-film"></i>Streamora</a>
+
+        <!-- menu start -->
+        <ul class="navbar">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Popular</a></li>
+            <li class="dropdown">
+                <a href="#">Categories</a>
+                <div class="dropdown-content">
+                    <a href="#">Action</a>
+                    <a href="#">Comedy</a>
+                    <a href="#">Drama</a>
+                    <a href="#">Horror</a>
+                    <a href="#">Sci-Fi</a>
+                    <a href="#">Romance</a>
+                    <a href="#">Thriller</a>
+                    <a href="#">Documentary</a>
+                    <a href="#">Animation</a>
+                    <a href="#">Fantasy</a>
+                    <a href="#">Anime</a>
+                </div>
+            </li>
+        </ul>
+        <!-- menu end -->
+
+        <div class="nav-right">
+            <div class="dropdown search-icon">
+                <i class="fa-solid fa-magnifying-glass" id="search-toggle"></i>
+                <div class="dropdown-content" id="search-dropdown">
+                    <form action="#" method="">
+                        <div class="search-wrapper">
+                            <input type="search" placeholder="Search for movies, TV shows..." name="search" required
+                                id="custom-search" />
+                            <button type="button" class="clear-btn" id="clear-button">
+                                &times;
+                            </button>
+                        </div>
+                        <a href="" class="btn-search">Search</a>
+                    </form>
+                </div>
+            </div>
+            <a href="#" class="btn">Sign In</a>
+            <div class="theme-toggle">
+                <div class="themes">
+                    <i class="fa-solid fa-moon" id="dark-mode"></i>
+                    <i class="fa-solid fa-cloud-sun" id="light-mode"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Navigation Bar End -->
+
+    <!-- Cover Start -->
+    <section class="home" id="home">
+        <div class="container">
+            <div class="wrapper-arrows">
+                <i class="fa-solid fa-chevron-left"></i>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <div class="cover-container">
+                <!--Cover 1-->
+                <div class="cover-wrapper">
+                    <img src="./image/cover.jpg" alt="Movie Cover" class="cover-image" />
+
+                    <video class="trailer-video">
+                        <source src="./trailer/Avengers-Infinity-War-trailer.mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <div class="home-text">
+                        <span>Marvel Cinematic Universe</span>
+                        <h1>Avengers:<br />Infinity War</h1>
+                        <a href="#" class="btn">Watch Now</a>
+                        <div class="description">
+                            <p>
+                                The Avengers must stop Thanos, who is on a mission to collect
+                                all six Infinity Stones and use them to inflict his twisted
+                                will on reality.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cover-overlay"></div>
+                </div>
+                <!--Cover 2-->
+                <div class="cover-wrapper">
+                    <img src="./image/F4-cover.jpg" alt="Movie Cover" class="cover-image" />
+
+                    <video class="trailer-video">
+                        <source src="./trailer/F4-trailer.mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <div class="home-text">
+                        <span>Marvel Cinematic Universe</span>
+                        <h1>Fantastic Four:<br />First Steps</h1>
+                        <a href="#" class="btn">Watch Now</a>
+                        <div class="description">
+                            <p>
+                                The Fantastic Four must come together to face a new threat
+                                that could destroy their city. With their unique powers, they
+                                embark on a journey to save the world from impending doom.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cover-overlay"></div>
+                </div>
+                <!--Cover 3-->
+                <div class="cover-wrapper">
+                    <img src="./image/cover2.jpg" alt="Movie Cover" class="cover-image" />
+
+                    <video class="trailer-video">
+                        <source src="./trailer/how-to-train-your-dragon-trailer.mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <div class="home-text">
+                        <span>DreamWorks</span>
+                        <h1>HOW TO TRAIN YOUR<br />DRAGON</h1>
+                        <a href="#" class="btn">Watch Now</a>
+                        <div class="description">
+                            <p>
+                                In a mythical Viking world, a young Viking named Hiccup
+                                befriends a dragon named Toothless, defying his tribe's
+                                traditions. Together, they embark on an adventure that changes
+                                their world forever.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cover-overlay"></div>
+                </div>
+                <!--Cover 4-->
+                <div class="cover-wrapper">
+                    <img src="./image/cover3.jpg" alt="Movie Cover" class="cover-image" />
+
+                    <video class="trailer-video">
+                        <source src="./trailer/superman-trailer.mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <div class="home-text">
+                        <span>DC Comics</span>
+                        <h1>Superman</h1>
+                        <a href="#" class="btn">Watch Now</a>
+                        <div class="description">
+                            <p>
+                                Superman, the last son of Krypton, fights to protect his
+                                adopted home of Earth from intergalactic threats and the
+                                machinations of his arch-nemesis, Lex Luthor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cover-overlay"></div>
+                </div>
+                <!--Cover 5-->
+                <div class="cover-wrapper">
+                    <img src="./image/cover4.jpg" alt="Movie Cover" class="cover-image" />
+
+                    <video class="trailer-video">
+                        <source src="./trailer/jurassic-world-rebirth-trailer.mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <div class="home-text">
+                        <span>Universal Pictures</span>
+                        <h1>Jurassic World:<br />Rebirth</h1>
+                        <a href="#" class="btn">Watch Now</a>
+                        <div class="description">
+                            <p>
+                                In a world where dinosaurs roam the Earth once again, a group
+                                of survivors must band together to protect their home from the
+                                prehistoric predators.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cover-overlay"></div>
+                </div>
+            </div>
+
+            <div class="slide-dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Cover End -->
+
+    <!--New Digital Release Start-->
+
+    <section class="new-release">
+        <div class="header">
+            <h2>New Digital Releases</h2>
+            <p>Discover the latest movies and TV shows available for streaming.</p>
+        </div>
+
+        <div class="movies-slider">
+            <div class="movies">
+                <a href="movie.html">
+                    <div class="poster">
+                        <img src="./image/avengers.jpg" alt="" />
+                    </div>
+                    <div class="name-rating">
+                        <h4>Avengers</h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>8.4</span>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Aliquid mollitia officiis sequi amet ratione! Illo debitis fuga
+                            facilis? Ullam ducimus in neque eum suscipit doloremque vitae
+                            illo a, est nesciunt?
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="movies">
+                <a href="movie.html">
+                    <div class="poster">
+                        <img src="./image/avengers-age-of-ultron.jpg" alt="" />
+                    </div>
+                    <div class="name-rating">
+                        <h4>Avengers: Age of Ultron</h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>8.4</span>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Aliquid mollitia officiis sequi amet ratione! Illo debitis fuga
+                            facilis? Ullam ducimus in neque eum suscipit doloremque vitae
+                            illo a, est nesciunt?
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="movies">
+                <a href="movie.html">
+                    <div class="poster">
+                        <img src="./image/avengers-end-game.jpg" alt="" />
+                    </div>
+                    <div class="name-rating">
+                        <h4>Avengers: Endgame</h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>10</span>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Aliquid mollitia officiis sequi amet ratione! Illo debitis fuga
+                            facilis? Ullam ducimus in neque eum suscipit doloremque vitae
+                            illo a, est nesciunt?
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="movies">
+                <a href="movie.html">
+                    <div class="poster">
+                        <img src="./image/one-piece-film-red.jpg" alt="" />
+                    </div>
+                    <div class="name-rating">
+                        <h4>One Piece Film: Red</h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>8.4</span>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Aliquid mollitia officiis sequi amet ratione! Illo debitis fuga
+                            facilis? Ullam ducimus in neque eum suscipit doloremque vitae
+                            illo a, est nesciunt?
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="movies">
+                <a href="movie.html">
+                    <div class="poster">
+                        <img src="./image/black-panther.jpg" alt="" />
+                    </div>
+                    <div class="name-rating">
+                        <h4>Black Panther</h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>10</span>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Aliquid mollitia officiis sequi amet ratione! Illo debitis fuga
+                            facilis? Ullam ducimus in neque eum suscipit doloremque vitae
+                            illo a, est nesciunt?
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--New Digital Release End-->
+
+    <!--Advertising Start-->
+    <section class="ads-container">
+        <div class="ads">
+            <i class="fa-solid fa-film"></i>
+            <div class="ads-text">
+                <h3>Streamora: Watch Movies Anytime, Anywhere</h3>
+                <p>
+                    Get all movies and TV series ad-free, plus download content! Try it
+                    free for 7 days. Cancel anytime.
+                </p>
+            </div>
+            <a href="#" class="btn">Start Free Trial</a>
+        </div>
+    </section>
+    <!--Advertising End-->
+
+    <!--Real-time Popular Movies Start-->
+    <section class="new-release">
+        <div class="header">
+            <h2>Real-Time Popular Movies</h2>
+            <p>
+                Discover the most popular movies and TV shows in real-time available
+                for streaming.
+            </p>
+        </div>
+
+        <div class="movies-slider">
+            <div class="movies">
+                <a href="movie.html">
+                    <div class="poster">
+                        <img src="./image/spiderman-no-way-home.jpg" alt="" />
+                    </div>
+                    <div class="name-rating">
+                        <h4>Spiderman:<br />No Way Home</h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>8.4</span>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Aliquid mollitia officiis sequi amet ratione! Illo debitis fuga
+                            facilis? Ullam ducimus in neque eum suscipit doloremque vitae
+                            illo a, est nesciunt?
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="movies">
+                <a href="movie.html">
+                    <div class="poster">
+                        <img src="./image/avengers-infinity-war.jpg" alt="" />
+                    </div>
+                    <div class="name-rating">
+                        <h4>Avengers: Infinity War</h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>10</span>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Aliquid mollitia officiis sequi amet ratione! Illo debitis fuga
+                            facilis? Ullam ducimus in neque eum suscipit doloremque vitae
+                            illo a, est nesciunt?
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="movies">
+                <a href="movie.html">
+                    <div class="poster">
+                        <img src="./image/F4.jpg" alt="" />
+                    </div>
+                    <div class="name-rating">
+                        <h4>Fantastic Four: First Steps</h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>10</span>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Aliquid mollitia officiis sequi amet ratione! Illo debitis fuga
+                            facilis? Ullam ducimus in neque eum suscipit doloremque vitae
+                            illo a, est nesciunt?
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="movies">
+                <a href="movie.html">
+                    <div class="poster">
+                        <img src="./image/transformers-one.jpg" alt="" />
+                    </div>
+                    <div class="name-rating">
+                        <h4>Transformers: One</h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>8.4</span>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Aliquid mollitia officiis sequi amet ratione! Illo debitis fuga
+                            facilis? Ullam ducimus in neque eum suscipit doloremque vitae
+                            illo a, est nesciunt?
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="movies">
+                <a href="movie.html">
+                    <div class="poster">
+                        <img src="./image/cover3.jpg" alt="" />
+                    </div>
+                    <div class="name-rating">
+                        <h4>Superman</h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>10</span>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Aliquid mollitia officiis sequi amet ratione! Illo debitis fuga
+                            facilis? Ullam ducimus in neque eum suscipit doloremque vitae
+                            illo a, est nesciunt?
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--Real-time Popular Movies End-->
+
+    <!--footer start-->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-left">
+                <a href="index.html#" class="logo"><i class="fa-solid fa-film"></i>Streamora</a>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                    labore, magnam dolores minima a alias provident earum deserunt est,
+                    obcaecati distinctio veritatis cupiditate nihil voluptatum eius
+                    asperiores officia quae sapiente.
+                </p>
+                <div class="social-media">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="back-to-top">
+                    <a href="index.html#"><i class="fa-solid fa-arrow-up"></i><span>Back to Top</span></a>
+                </div>
+            </div>
+
+            <div class="sitemap">
+                <h3>Sitemap</h3>
+                <a href="index.html#">Home</a>
+                <a href="">New</a>
+                <a href="">Popular</a>
+                <a href="">About Us</a>
+            </div>
+
+            <div class="footer-right">
+                <h3>Profile</h3>
+                <a href="">Sign Up</a>
+                <a href="">Sign In</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>Copyright &copy; 2025, All Rights Reserved</span>
+        </div>
+    </footer>
+    <!--footer end-->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            window.addEventListener("load", function () {
+                setTimeout(() => {
+                    document.getElementById("loading-screen").classList.add("hidden");
+                }, 1100);
+            });
+
+            const toggle = document.querySelector(".themes");
+            const darkModeIcon = document.getElementById("dark-mode");
+            const lightModeIcon = document.getElementById("light-mode");
+            const body = document.body;
+
+            const savedTheme = localStorage.getItem("theme");
+            if (savedTheme === "light") {
+                body.classList.add("light-mode");
+                toggle.style.rotate = "180deg";
+            }
+
+            darkModeIcon.addEventListener("click", () => {
+                body.classList.add("light-mode");
+                toggle.style.rotate = "180deg";
+                localStorage.setItem("theme", "light");
+            });
+
+            lightModeIcon.addEventListener("click", () => {
+                body.classList.remove("light-mode");
+                toggle.style.rotate = "0deg";
+                localStorage.setItem("theme", "dark");
+            });
+
+            // Cover slideshow
+            const covers = document.querySelectorAll(".cover-wrapper");
+            const arrows = document.querySelectorAll(".wrapper-arrows i");
+            const dots = document.querySelectorAll(".slide-dots .dot");
+
+            let currentIndex = 0;
+            let autoSlideTimeout = null;
+            let isHovering = false;
+
+            function resetDot(dot, duration) {
+                dot.style.setProperty("--fill-duration", `${duration}s`);
+                dot.classList.remove("active");
+                void dot.offsetWidth;
+                dot.classList.add("active");
+            }
+
+            function updateSlide(index, useVideo = false) {
+                clearTimeout(autoSlideTimeout);
+                currentIndex = index;
+
+                document.querySelector(
+                    ".cover-container"
+                ).style.transform = `translateX(-${index * 100}vw)`;
+
+                covers.forEach((cover, i) => {
+                    cover.style.opacity = i === index ? "1" : "0";
+                });
+
+                dots.forEach((dot) => {
+                    dot.classList.remove("active");
+                    void dot.offsetWidth;
+                });
+
+                const currentCover = covers[index];
+                const currentDot = dots[index];
+                const currentVideo = currentCover.querySelector("video");
+
+                const applyDuration = (duration) => {
+                    resetDot(currentDot, duration);
+                    if (!isHovering) {
+                        autoSlideTimeout = setTimeout(() => {
+                            let nextIndex = (index + 1) % covers.length; // Loop
+                            updateSlide(nextIndex);
+                        }, duration * 1000);
+                    }
+                };
+
+                if (useVideo && currentVideo) {
+                    if (currentVideo.readyState >= 1) {
+                        applyDuration(currentVideo.duration || 5);
+                    } else {
+                        currentVideo.addEventListener(
+                            "loadedmetadata",
+                            () => {
+                                applyDuration(currentVideo.duration || 5);
+                            },
+                            { once: true }
+                        );
+                    }
+                } else {
+                    applyDuration(5);
+                }
+            }
+
+            updateSlide(currentIndex);
+
+            // Arrows
+            arrows[1].addEventListener("click", () => {
+                currentIndex = (currentIndex + 1) % covers.length;
+                isHovering = false;
+                updateSlide(currentIndex);
+            });
+
+            arrows[0].addEventListener("click", () => {
+                currentIndex = (currentIndex - 1 + covers.length) % covers.length;
+                isHovering = false;
+                updateSlide(currentIndex);
+            });
+
+            // Hover behavior
+            covers.forEach((wrapper, index) => {
+                const video = wrapper.querySelector("video");
+                const image = wrapper.querySelector("img");
+
+                wrapper.addEventListener("mouseenter", () => {
+                    if (index !== currentIndex) return;
+                    isHovering = true;
+                    video.muted = false; // Allow audio
+                    video.currentTime = 0;
+                    video.style.opacity = "1";
+                    image.style.opacity = "0";
+                    video.play();
+                    clearTimeout(autoSlideTimeout);
+                    updateSlide(currentIndex, true);
+                });
+
+                wrapper.addEventListener("mouseleave", () => {
+                    if (index !== currentIndex) return;
+                    isHovering = false;
+                    video.style.opacity = "0";
+                    image.style.opacity = "1";
+                    video.pause();
+                    resetDot(dots[currentIndex], 5);
+                    autoSlideTimeout = setTimeout(() => {
+                        updateSlide((currentIndex + 1) % covers.length);
+                    }, 5000);
+                });
+
+                video.addEventListener("ended", () => {
+                    video.style.opacity = "0";
+                    image.style.opacity = "1";
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
